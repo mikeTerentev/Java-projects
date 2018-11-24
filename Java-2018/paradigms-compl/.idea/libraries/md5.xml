@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="md5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/java/md5/CalcMD5Test.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java/md5/SHA256SumTest.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

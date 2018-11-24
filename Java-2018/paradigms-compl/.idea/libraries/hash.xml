@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="hash">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/artifacts/hash/SHA256SumTest.jar!/" />
+      <root url="jar://$PROJECT_DIR$/artifacts/hash/CalcMD5Test.jar!/" />
+      <root url="jar://$PROJECT_DIR$/artifacts/hash/CalcSHA256Test.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

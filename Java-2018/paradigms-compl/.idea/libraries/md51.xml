@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="md51">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/paradigms-2018/md5/SHA256SumTest.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/paradigms-2018/md5/CalcMD5Test.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,22 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --error-color: red;
+    --datatable-color: #E1E1E1;
+    --datatable-dark-cell-color: #f8f8f8;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.user-page .id{
+    color: #3B5998;
+}
+.user-page .login{
+    color: red;
+}
+.user-page .creationTime{
+    color: green;
+}
