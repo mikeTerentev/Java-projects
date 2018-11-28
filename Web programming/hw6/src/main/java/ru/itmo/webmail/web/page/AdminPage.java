@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class AdminPage extends Page{
+public class AdminPage extends Page {
     @Override
     public void before(HttpServletRequest request, Map<String, Object> view) {
         super.before(request, view);
@@ -19,22 +19,26 @@ public class AdminPage extends Page{
         if (getUser() == null) {
             throw new RedirectException("/enter");
         }
-        if(!getUser().isAdmin()){
-            throw new RepositoryException("/index");
+        if (!getUser().isAdmin()) {
+            throw new RedirectException("/index");
         }
     }
 
     private Map<String, Object> change(HttpServletRequest request, Map<String, Object> view) {
         String userId = request.getParameter("id");
         ///???
-        boolean isAdmin = getUserService().change(userId);
-        view.put("success", true);
-        view.put("admin", isAdmin);
+        if (getUser().isAdmin()) {
+            boolean isAdmin = getUserService().change(userId);
+            view.put("success", true);
+            view.put("admin", isAdmin);
+        }else {
+            view.put("success", false);
+            view.put("error","You are not an admin");
+        }
         return view;
     }
 
-    private List<User> find(HttpServletRequest request, Map<String, Object> view)
-    {
+    private List<User> find(HttpServletRequest request, Map<String, Object> view) {
         return getUserService().findAll();
     }
 

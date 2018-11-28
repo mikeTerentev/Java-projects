@@ -70,6 +70,10 @@
                                         if (result["success"]) {
                                             $button.text(getName(result["admin"]));
                                         }
+                                        if (!result["success"]) {
+                                            setMessage("You are not an admin");
+                                            document.location.href = "/";
+                                        }
                                     }
                                 });
                             });
