@@ -1,0 +1,1 @@
+java -p lib:artifacts -jar ru.ifmo.rain.terentev.implementor.jar  ru.ifmo.rain.terentev.arrayset.ArraySet /Users/miketerentyev/itmo/Users/miketerentyev/itmo/kek.jar

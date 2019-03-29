@@ -1,0 +1,1 @@
+java -cp  out/production/java-advanced-2019 -p artifacts:lib -m info.kgeorgiy.java.advanced.concurrent  list  ru.ifmo.rain.terentev.concurrent.MyFuncs
